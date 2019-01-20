@@ -74,7 +74,7 @@ class DownloadProtect_DownloadController extends Omeka_Controller_AbstractAction
         $this->session->setExpirationHops(2);
 
         if (!$this->_checkSession()) {
-            $this->_helper->flashMessenger(__('Download error.'), 'error');
+            // $this->_helper->flashMessenger(__('Download error.'), 'error');
             return $this->_gotoSourcePage();
         }
 
